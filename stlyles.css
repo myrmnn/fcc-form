@@ -25,8 +25,16 @@ form {
 	font-weight: 600;
 }
 
-.text-label {
+.text {
 	margin: 0.5em 0;
+	outline: none;
+	transition: outline 0.3s ease-in;
+}
+
+.text:focus,
+select:focus,
+textarea:focus {
+	outline: solid 2px #af504a;
 }
 
 .inline {
@@ -75,8 +83,10 @@ input[type="submit"]:hover {
 }
 
 textarea {
-	width: 99%;
+	width: 97%;
 	border-radius: 5px;
+	border: none;
 	font-size: 1rem;
+	padding: 0.5em;
 	font-family: Verdana, Geneva, Tahoma, sans-serifd;
 }
